@@ -3,9 +3,12 @@ import os
 import base64
 import time
 import traceback
-
-import cv2
 import numpy as np
+
+try:
+    import cv2
+except Exception:
+    cv2 = None
 from flask import Flask, redirect, render_template, render_template_string, request, url_for
 
 BASE_DIR = Path(__file__).resolve().parent
