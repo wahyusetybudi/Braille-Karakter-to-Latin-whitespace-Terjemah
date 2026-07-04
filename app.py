@@ -275,6 +275,9 @@ def result():
 
 
 if __name__ == "__main__":
-    port = int(os.environ.get("PORT", 3001))
-    print(f"Aplikasi berjalan di port: {port}")
-    app.run(host="0.0.0.0", port=port, debug=False, use_reloader=False)
+    port = int(os.environ.get("PORT", 8080))
+    app.run(
+        host="0.0.0.0",
+        port=port,
+        debug=False
+    )
