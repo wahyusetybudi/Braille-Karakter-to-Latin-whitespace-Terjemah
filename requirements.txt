@@ -7,12 +7,7 @@ Pillow==10.4.0
 
 opencv-python-headless==4.10.0.84
 
-tensorflow-cpu==2.11.1
+tensorflow==2.15.1
 
-torch==2.2.2
-torchvision==0.17.2
-
-ultralytics==8.2.103
-
-h5py==3.8.0
-scipy==1.10.1
+h5py==3.10.0
+scipy==1.11.4
