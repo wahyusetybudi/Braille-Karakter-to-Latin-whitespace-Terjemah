@@ -9,6 +9,8 @@ RUN apt-get update && apt-get install -y \
     libxext6 \
     libxrender1 \
     ffmpeg \
+    gcc \
+    g++ \
     && rm -rf /var/lib/apt/lists/*
 
 COPY requirements.txt .
