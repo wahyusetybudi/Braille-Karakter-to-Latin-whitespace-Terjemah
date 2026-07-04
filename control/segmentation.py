@@ -1,8 +1,11 @@
 from collections import Counter
 
-import cv2
 import numpy as np
 from ultralytics import YOLO
+try:
+    import cv2
+except Exception:
+    cv2 = None
 
 from .convert import parse_xywh_and_class
 
